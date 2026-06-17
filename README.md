@@ -1,6 +1,7 @@
 # 👋 Hi, I'm 王贺龙 (Helong Wang)
 
 > 🧪 软件测试开发工程师 | 大连 | AI 测试探索者
+> 💡 技术作品集专用账号 | 2.5 年测试开发实战沉淀
 
 [![Email](https://img.shields.io/badge/📧-346296043@qq.com-blue)](mailto:346296043@qq.com)
 [![Location](https://img.shields.io/badge/📍-大连-orange)]()
@@ -39,15 +40,6 @@
 |------|------|
 | 🧪 [**qa-playground**](https://github.com/wyf200129-oss/qa-playground) | 个人测试技术主页：AI 测试工作流 + POM 框架 Demo + 评审体系 |
 | 🚀 [**testhub-deploy-notes**](https://github.com/wyf200129-oss/testhub-deploy-notes) | TestHub 智能测试管理平台全栈部署实录 |
-
----
-
-## 📊 GitHub Stats
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=wyf200129-oss&show_icons=true&theme=default&hide_title=true" height="150" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wyf200129-oss&layout=compact&theme=default" height="150" />
-</p>
 
 ---
 
