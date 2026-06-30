@@ -1,65 +1,98 @@
-# 👋 Hi, I'm 王贺龙 (Helong Wang)
+# 🧪 QA Playground — 王贺龙的测试技术仓库
 
-> 🧪 软件测试开发工程师 | 大连 | AI 测试探索者
-> 💡 技术作品集专用账号 | 2.5 年测试开发实战沉淀
-
-[![Email](https://img.shields.io/badge/📧-346296043@qq.com-blue)](mailto:346296043@qq.com)
-[![Location](https://img.shields.io/badge/📍-大连-orange)]()
-[![Resume](https://img.shields.io/badge/📄-在线简历-green)](https://github.com/wyf200129-oss/qa-playground)
+> 2.5年测试开发经验 | 期望城市：大连 | Python 自动化 | Cursor AI 双端流水线
 
 ---
 
-## 🔧 Tech Stack
+## 👤 关于我
 
-**测试框架 & 工具**
-
-![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-![Selenium](https://img.shields.io/badge/-Selenium-43B02A?logo=selenium&logoColor=white)
-![pytest](https://img.shields.io/badge/-pytest-0A9EDC?logo=pytest&logoColor=white)
-![JMeter](https://img.shields.io/badge/-JMeter-D22128?logo=apache-jmeter&logoColor=white)
-![Postman](https://img.shields.io/badge/-Postman-FF6C37?logo=postman&logoColor=white)
-![Jenkins](https://img.shields.io/badge/-Jenkins-D24939?logo=jenkins&logoColor=white)
-
-**AI 辅助测试**
-
-![ChatGPT](https://img.shields.io/badge/-ChatGPT-412991?logo=openai&logoColor=white)
-![RAG](https://img.shields.io/badge/-RAG_检索增强-7B42BC)
-
-**数据库 & DevOps**
-
-![MySQL](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/-Linux-FCC624?logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/-Git-F05032?logo=git&logoColor=white)
+2.5 年 Web/App 双端测试开发经验，从 0 到 1 独立搭建 UI（POM + Selenium）和接口（关键字驱动 + Requests）两套自动化框架，共 600+ 条用例接入 Jenkins 定时回归。基于 Cursor .cursorrules 定制 POM 截图驱动和接口契约驱动双端 AI 流水线。AI 辅助测试方面，用例设计工时缩短 50%，需求场景覆盖率从 80% 提升至 95%。
 
 ---
 
-## 📂 Pinned Repositories
+## 🔧 技术栈
 
-| 仓库 | 说明 |
+| 类别 | 技能 |
 |------|------|
-| 🧪 [**qa-playground**](https://github.com/wyf200129-oss/qa-playground) | 个人测试技术主页：AI 测试工作流 + POM 框架 Demo + 评审体系 |
-| 🚀 [**testhub-deploy-notes**](https://github.com/wyf200129-oss/testhub-deploy-notes) | TestHub 智能测试管理平台全栈部署实录 |
+| **语言** | Python |
+| **UI 自动化** | Selenium · POM 设计模式 · YAML 数据驱动 · Cursor 截图驱动流水线 |
+| **接口自动化** | Requests · 关键字驱动 · JSONPath · pytest-allure · Cursor 契约驱动流水线 |
+| **性能测试** | JMeter · TPS / 95线 / 错误率分析 |
+| **CI/CD** | Jenkins Pipeline · Allure 报告 · Git SCM |
+| **数据库** | MySQL 多表联查 |
+| **工具链** | Git · Docker · Linux Shell · 禅道 · Cursor AI .cursorrules |
 
 ---
 
-## 🎯 核心能力
+## 📂 仓库内容
 
-| 能力 | 关键词 |
-|------|--------|
-| **自动化测试** | POM 分层 + YAML 数据驱动 + pytest + Jenkins CI（90+用例定时回归） |
-| **AI 辅助测试** | RAG 需求解析 → 用例生成 → 覆盖率分析（工时 -50%，覆盖率 80%→95%） |
-| **框架搭建** | 从 0 搭建 UI/接口双端自动化框架 + 完整用例评审体系 |
-| **全流程质量保障** | Web/App双端 · 需求评审 · 用例设计 · 缺陷管理 · CI集成 |
+### 🤖 AI 辅助测试实践
+- [AI 需求解析 → 用例生成工作流](./ai-testing/workflow.md)
+- Prompt 工程 + RAG 辅助测试设计，工时 -50%，覆盖率 80%→95%
+
+### 🖥️ UI 自动化框架 — Cursor 截图驱动流水线
+- [POM + YAML 数据驱动 + Cursor 12步流水线](./automation-demos/ui-pom/)
+- 5条规则 + 1个Skill，实现「截图 → 页面对象 → 自检 → 用例 → pytest → Allure」
+- 定位器失败自愈：id→name→css→xpath 优先级自动替换（≤3次重试）
+
+### 🔌 AI 接口自动化框架 — Cursor 契约驱动工作流
+- [关键字驱动 + 契约驱动四阶段门禁](./automation-demos/api-keyword/)
+- **4条规则**：pytest骨架与实现 · 契约优先 · 落盘路径 · fixture治理
+- **3个Skill**：测试用例生成 · fixture与用例实现 · pytest失败修复闭环
+
+```
+OpenAPI契约 → A试点骨架 → B试点实现 → C全盘骨架 → D全盘实现
+     ↑ 每阶段人工评审通过才能进入下一阶段 ↑
+                         ↓
+              失败修复闭环（红→绿 / xfail / skip）
+```
+
+**四条铁律**：
+1. **契约优先**：path/method/status/schema 全来自 OpenAPI，禁止编造
+2. **body → status 联合断言**：先验 body 字段/类型/语义，再联合 status_code，禁止仅 `assert status_code == 200`
+3. **四阶段不越级**：A→B→C→D 逐级评审，禁止一次写到 D
+4. **pytest 执行后才定 xfail/skip**：写用例时不预设标记
+
+**断言示例**：
+```python
+# ✅ 正确：先 body 后 status
+token = api.get_text(res.json(), "$..token")
+assert token and len(token) > 20         # 1. 先 body
+assert res.status_code == 200             # 2. 再 status
+
+# ❌ 假绿：pytest 过了但什么都没验证
+assert response.status_code == 200
+```
+
+### 🚀 开源工具部署实践
+- [TestHub 全栈部署实录](./deploy-notes/)（Django + Vue3 + MySQL + Docker）
 
 ---
 
-## 🔥 最近在做什么
+## 📈 项目经历速览
 
-- 🧠 **AI 测试工作流**：探索并落地 AI 大模型辅助需求解析与用例设计，形成标准化 Skill 与评审 Checklist
-- 🏗️ **POM 框架开源**：将实战项目框架脱敏、重构（unittest → pytest）、开源至 GitHub
-- 📋 **测试评审体系**：建立 6 维 28 项评审标准 + 自动简报模板
+### ERP 企业资源计划系统（2025.05 – 2026.03）
+面向服装企业的 Web + App 双端进销存系统，覆盖 13 个业务模块。
+
+- 主导采购/销售/库存三模块全流程测试，覆盖 12 类核心单据
+- 独立搭建 POM UI 自动化（200+ 条）+ 关键字驱动接口自动化（400+ 条），接入 Jenkins
+- Cursor .cursorrules 定制双端 AI 流水线：POM 截图驱动 + 接口契约驱动
+- AI 辅助测试设计：用例设计工时缩短 50%，覆盖率 80%→95%
+
+### CCAS 后台管理系统（2024.10 – 2025.04）
+电子档案编制管理系统，支持多层级归档、CA 数字证书电子签章。
+
+### TestHub 智能测试管理平台（2026.03 – 2026.04）
+开源测试平台全栈部署，验证 AI 功能用例生成、测试数据工厂等模块。
 
 ---
 
-*财务管理专业转型测试开发 · 2.5 年实战经验 · 计划回大连发展*
+## 📬 联系方式
+
+- 📧 邮箱：346296043@qq.com
+- 📱 电话：18840823821
+- 🐙 GitHub：[github.com/wyf200129-oss](https://github.com/wyf200129-oss)
+
+---
+
+> 💡 **"不只会用工具，更会从 0 到 1 搭建工具 + AI 驱动效率。"**
